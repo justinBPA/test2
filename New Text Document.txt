@@ -1,2 +1,42 @@
-this is some text.
-//added a comment
+#include <iostream>
+using namespace std;
+
+class Shape 
+{
+   public:
+   int width;
+   int height;
+      /*void setWidth(int w)
+      {
+         width = w;
+      }
+      void setHeight(int h)
+      {
+         height = h;
+      }
+   protected:
+      int width;
+      int height;*/
+};
+
+// Derived class
+class Rectangle: public Shape
+{
+   public:
+      int getArea()
+      { 
+         return (width * height); 
+      }
+};
+
+
+int main() 
+{
+	// your code goes here
+	Rectangle r;
+	r.width=3;
+	r.height=4;
+	cout<<r.getArea();
+	
+	return 0;
+}
