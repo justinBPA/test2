@@ -37,6 +37,6 @@ int main()
 	r.width=3;
 	r.height=4;
 	cout<<r.getArea();
-	
+	cout<<r.getArea();
 	return 0;
 }
